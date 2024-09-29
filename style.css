@@ -157,3 +157,124 @@ section {
     padding: 0;
     margin-top: 5rem;
 }
+
+.home .slide {
+    min-height: 90vh;
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+}
+
+.home .slide .content {
+    width: 60rem;
+}
+
+.home .slide .content span {
+    -webkit-text-stroke: 0.045rem var(--cor-text);
+    font-size: 3rem;
+    font-weight: bolder;
+    color: var(--cor-principal);
+    display: block;
+}
+
+.home .slide .content h3 {
+    font-size: 5rem;
+    color: var(--cor-text);
+    padding: 1rem 0;
+}
+
+/* bolinhas de passar slider, da biblioteca swiper */
+.swiper-pagination-bullet {
+    height: 2rem;
+    width: 2rem;
+    background: var(--cor-text);
+    border-radius: 0;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: var(--cor-principal);
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8rem;
+}
+
+.about .image {
+    flex: 1 1 42rem;
+    position: relative;
+}
+
+.about .image::before, /* elemento antes */
+.about .image::after { /* elemento antes */
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--cor-principal);
+    height: 15rem;
+    width: 15rem;
+}
+
+.about .image::before {
+    top: 0;
+    left: 0;
+}
+
+.about .image::after{
+    bottom: 0;
+    right: 0;
+}
+/* ajustando a imagem dento do elementos*/
+.about .image img {
+    width: 100%;
+    padding: 2rem;
+}
+
+.about .content {
+    flex: 1 1 42rem;
+}
+
+.about .content span {
+    font-size: 2rem;
+    color: var(--cor-principal);
+}
+
+.about .content .title {
+    font-size: 4rem;
+    color: var(--cor-text);
+    margin-top: .5rem;
+}
+
+.about .content p {
+    font-size: 1.5rem;
+    color: var(--cor-gray);
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.about .content .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.about .content .box-container .box {
+    flex: 1 1 20rem;
+}
+
+.about .content .box-container .box h3 {
+    font-size: 2rem;
+    color: var(--cor-text);
+}
+
+.about .content .box-container h3 i {
+    padding-right: 1.5rem;
+    color: var(--cor-principal);
+}
+
+/* Serviços */
