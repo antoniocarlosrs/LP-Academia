@@ -5,6 +5,7 @@
     --cor-backgound: #000;
     --cor-gray: #aaa;
     --cor-text: #FFF;
+    --color-light-black: #111;
 }
 
 *{
@@ -278,3 +279,312 @@ section {
 }
 
 /* Serviços */
+.features .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem,1fr));
+    gap: 1.5rem;
+}
+
+.features .box-container .box {
+    background: var(--color-light-black);
+}
+
+.features .box-container .box.second {
+    display: flex;
+    flex-flow: column-reverse;
+}
+
+.features .box-container .box:hover .image img {
+    transform: scale(1.1);
+}
+
+.features .box-container .box .image {
+    height: 30rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.features .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /*object-fit: Serve para dimensionar a imagem, p/ manter sua 
+    proporção e preencher toda a caixa de conteudo do elemento.*/
+}
+
+.features .box-container .box .content {
+    padding: 2rem;
+    text-align: center;
+}
+
+.features .box-container .box .content img {
+    height: 9rem;
+    margin-bottom: 1rem;
+    filter: invert(1);
+}
+
+.features .box-container .box .content h3 {
+    font-size: 2rem;
+    color: var(--cor-principal);
+}
+
+.features .box-container .box .content p {
+    line-height: 2;
+    font-size: 1.5rem;
+    color: var(--cor-gray);
+    padding: 1rem 0;
+}
+
+/* Preços */
+
+.pricing {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap: 1.5rem;
+}
+
+.pricing .information span {
+    font-size: 2rem;
+    color: var(--cor-principal);
+}
+
+.pricing .information h3 {
+    font-size: 4rem;
+    padding-top: .5rem;
+    color: var(--cor-text);
+}
+
+.pricing .information p {
+    line-height: 2;
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: var(--cor-gray);
+}
+
+.pricing .information p i {
+    padding-right: 1rem;
+    color: var(--cor-principal);
+}
+
+.pricing .information .fas.fa-check {
+    font-weight: bolder;
+    font-size: 1.6rem;
+}
+
+.pricing .plan {
+    text-align: center;
+    padding: 2rem;
+}
+
+.pricing .plan.basic {
+    background: linear-gradient(130deg, var(--color-light-black) 93%, transparent 90%);
+}
+
+.pricing .plan h3 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    color: var(--cor-text);
+}
+
+.pricing .plan .price {
+    font-size: 5rem;
+    font-weight: bolder;
+    color: var(--cor-principal);
+}
+
+.pricing .plan .price span {
+    color: var(--cor-text);
+    font-size: 2rem;
+}
+
+.pricing .plan .list {
+    padding: 1rem 0;
+}
+
+.pricing .plan .list p {
+    line-height: 2;
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: var(--cor-gray);
+}
+
+.pricing .plan .list .fas.fa-check {
+    font-weight: bolder;
+    font-size: 1.6rem;
+}
+
+.pricing .plan .list p i {
+    padding-right: 1rem;
+    color: var(--cor-principal);
+}
+
+/* Treimadores */
+.trainers .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+    gap: 1.5rem;
+}
+
+.trainers .box-container .box {
+    height: 40rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.trainers .box-container .box:hover .content {
+    transform: translateY(0);
+}
+
+.trainers .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.trainers .box-container .box .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--color-light-black);
+    padding: 2rem;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    transform: translateY(6.5rem);
+}
+
+.trainers .box-container .box .content span {
+    font-size: 1.5rem;
+    color: var(--cor-principal);
+}
+
+.trainers .box-container .box .content h3 {
+    font-size: 2rem;
+    color: var(--cor-text);
+    padding-top: .5rem;
+}
+
+.trainers .box-container .box .content .share {
+    padding-top: 2rem; 
+    margin-top: 1.5rem;
+    border-top: .1rem solid var(--cor-gray);
+}
+
+.trainers .box-container .box .content .share a {
+    font-size: 2rem;
+    color: var(--cor-text);
+    margin-right: 1.5rem;
+}
+
+.trainers .box-container .box .content .share a:hover {
+    color: var(--cor-principal);
+}
+
+/* Banner */
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/FITNESS\ CENTER\ _\ GYM.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.banner span {
+    font-size: 2rem;
+    color: var(--cor-principal);
+}
+
+.banner h3 {
+    padding-top: 1rem;
+    color: var(--cor-text);
+    text-transform: uppercase;
+    font-size: 3.5rem;
+}
+
+.banner p {
+    margin: 1rem auto;
+    max-width: 60rem;
+    font-size: 1.5rem;
+    color: var(--cor-gray);
+    line-height: 2;
+}
+
+/* Fidbaks */
+.review {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.review .information {
+    flex: 1 1 35rem;
+}
+
+.review .information span {
+    font-size: 2rem;
+    color: var(--cor-principal);
+}
+
+.review .information h3 {
+    font-size: 3rem;
+    color: var(--cor-text);
+    padding-top: 1rem;
+}
+
+.review .information p {
+    font-size: 1.5rem;
+    line-height: 2;
+    color: var(--cor-gray);
+    padding: 1rem 0;
+}
+
+.review .review-slider {
+    flex: 1 1 60rem;
+}
+
+.review .review-slider .slide {
+    background: linear-gradient(130deg, var(--color-light-black) 93%, transparent 90%);
+    padding: 2rem 3rem;
+}
+
+.review .review-slider .slide p {
+    font-size: 1.5rem;
+    line-height: 2;
+    color: var(--cor-gray);
+}
+
+.review .review-slider .slide .user {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.review .review-slider .slide .user img {
+    /* border: 2px solid #807e7e; */
+    height: 5rem;
+    width: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.review .review-slider .slide .user h3 {
+    font-size: 2rem;
+    color: var(--cor-text);
+}
+
+.review .review-slider .slide .user span {
+    color: var(--cor-principal);
+    font-size: 1.5rem;
+}
+
+.review .review-slider .slide .user i {
+    font-size: 5rem;
+    margin-left: auto;
+    margin-right: 2rem;
+    color: var(--cor-principal);
+}
+
+/* Blogs */
+
