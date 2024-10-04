@@ -587,4 +587,129 @@ section {
 }
 
 /* Blogs */
+.blogs .slide {
+    background: var(--color-light-black);
+    margin-bottom: 7rem;
+}
 
+.blogs .slide:hover .image img {
+    transform: scale(1.1);
+}
+
+.blogs .slide .image {
+    height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.blogs .slide .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blogs .slide .content {
+    padding: 2rem;
+}
+
+.blogs .slide .content .link {
+    padding-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.blogs .slide .content .link a {
+    color: var(--cor-principal);
+}
+
+.blogs .slide .content .link a:hover {
+    color: var(--cor-text);
+}
+
+.blogs .slide .content .link span {
+    color: var(--cor-text);
+    padding: 0 1rem;
+}
+
+.blogs .slide .content h3 {
+    font-size: 2rem;
+    color: var(--cor-text);
+    line-height: 1.5;
+}
+
+.blogs .slide .content p {
+    font-size: 1.7rem;
+    color: var(--cor-gray);
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+/* Rodapé */
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.2rem;
+    color: var(--cor-text);
+    padding: 1rem 1rem;
+}
+
+.footer .box-container .box .links {
+    font-size: 1.5rem;
+    display: block;
+    color: var(--cor-gray);
+    padding: 1rem 1rem;
+}
+
+.footer .box-container .box .links:hover {
+    color: var(--cor-principal);
+}
+
+.footer .box-container .box p {
+    font-size: 1.5rem;
+    color: var(--cor-gray);
+    padding: 1rem 3rem;
+}
+
+.footer .box-container .box p i {
+    padding-right: .5rem;
+    color: var(--cor-principal);
+}
+
+.footer .box-container .box .share {
+    padding: 1rem 3rem;
+}
+
+.footer .box-container .box .share a {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 1.7rem;
+    color: var(--cor-gray);
+    background: var(--color-light-black);
+    border-radius: 50%;
+    margin-right: .5rem;
+    text-align: center;
+}
+
+.footer .box-container .box .share a:hover {
+    background: var(--cor-principal);
+}
+
+.footer .box-container .box form {
+    margin-left: 2rem;
+}
+
+.footer .box-container .box form .email {
+    margin-bottom: 1rem;
+    width: 100%;
+    background: var(--color-light-black);
+    padding: 1.2rem;
+    font-size: 1.5rem;
+    color: var(--cor-text);
+    text-transform: none;
+}
+
+/* Responsividade */
