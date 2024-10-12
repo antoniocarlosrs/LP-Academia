@@ -133,7 +133,7 @@ section {
     height: .3rem;
     margin-top: .6rem;
     border-radius: .1rem;
-    transition: all 0.3s;
+    transition: all 0.5s;
     background: #9B0029;
     background: -webkit-linear-gradient(
         to right,
@@ -144,7 +144,7 @@ section {
 }
 
 .navbar a:hover::after {
-    width: 4rem;
+    width: 100%;
 }
 
 #btn-menu-burger {
@@ -773,7 +773,7 @@ section {
 
     .header .navbar {
         position: absolute;
-        top: 99%;
+        top: 100%;
         left: 0;
         right: 0;
         background: var(--cor-backgound);
@@ -785,7 +785,7 @@ section {
     }
 
     .header .navbar a {
-        display: block;
+        display: inline-block;
         font-size: 2rem;
     }
 
