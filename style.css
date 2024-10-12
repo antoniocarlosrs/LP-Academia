@@ -719,7 +719,7 @@ section {
 
 .footer .footer-end p{
     background: var(--color-light-black);
-    padding: 2rem ;
+    padding: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -728,6 +728,7 @@ section {
     color: var(--cor-text);
     font-size: 1.5rem;
 }
+
 /* Responsividade */
 
 @media (max-width:991px) {
