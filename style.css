@@ -191,11 +191,12 @@ section {
     height: 2rem;
     width: 2rem;
     background: var(--cor-text);
-    border-radius: 0;
+    border-radius: 50;
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background: var(--cor-principal);
+    border: solid 1px var(--cor-gray);
 }
 
 .about {
@@ -712,6 +713,21 @@ section {
     text-transform: none;
 }
 
+.footer .footer-end {
+    margin-top: 2rem;
+}
+
+.footer .footer-end p{
+    background: var(--color-light-black);
+    padding: 2rem ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    bottom: 0;
+    color: var(--cor-text);
+    font-size: 1.5rem;
+}
 /* Responsividade */
 
 @media (max-width:991px) {
